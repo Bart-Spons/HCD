@@ -1,0 +1,95 @@
+#videoContainer {
+  /* max-width: 560px; */
+  margin: auto;
+}
+
+#descriptionBox {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-top: 20px; /* Voeg ruimte toe boven de beschrijvingsbox */
+}
+
+/* Voorbeeld animatie */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#myVideo {
+  width: 75em;
+}
+
+#speedometerContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#speedometer {
+  font-size: 4em;
+  font-family: "Arial", sans-serif;
+}
+
+#tikContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+.tik {
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  color: #000;
+  opacity: 0; /* Start met onzichtbaar */
+  transition: opacity 0.5s ease-in-out; /* Overgang voor zichtbaar/onzichtbaar */
+}
+
+/* Positieer elk 'tik' element in een cirkel */
+.tik:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tik:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.tik:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tik:nth-child(4) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.tik:nth-child(5) {
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 70% 30%; /* Definieer kolombreedtes */
+  gap: 10px; /* Optioneel: ruimte tussen kolommen */
+}
+
+.kolom {
+  padding: 20px;
+  /* color: white; */
+}
