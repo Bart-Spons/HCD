@@ -1,30 +1,76 @@
+html {
+  background-color: #000;
+  color: white;
+}
+
 #videoContainer {
   /* max-width: 560px; */
-  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 #descriptionBox {
   width: 100%;
   text-align: center;
-  color: white;
+  /* color: white; */
   font-size: 2em;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 10px;
   margin-top: 20px; /* Voeg ruimte toe boven de beschrijvingsbox */
 }
 
 /* Voorbeeld animatie */
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes draai {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
   }
 }
 
 #myVideo {
-  width: 75em;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  padding: 2em 2em 0 2em;
 }
 
 #speedometerContainer {
@@ -81,15 +127,4 @@
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 70% 30%; /* Definieer kolombreedtes */
-  gap: 10px; /* Optioneel: ruimte tussen kolommen */
-}
-
-.kolom {
-  padding: 20px;
-  /* color: white; */
 }

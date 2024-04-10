@@ -1,14 +1,21 @@
 document.getElementById('myVideo').addEventListener('click', function () {
     // Pas direct de animatie toe zonder de setTimeout vertraging
-    var animatedDiv = document.getElementById('myVideo');
-    animatedDiv.style.animation = 'rotate 10s 8s forwards';
+    // var animatedDiv = document.getElementById('myVideo');
+    // animatedDiv.style.animation = 'rotate 10s 8s forwards';
 });
 
 document.addEventListener('DOMContentLoaded', function () {
     const descriptionBox = document.getElementById('descriptionBox');
     const descriptions = [
-        { start: 0, end: 5, text: "Vrolijke muziek begint." },
-        { start: 6, end: 16, text: "De hamster begint te rennen in zijn rad." }
+        { start: 0, end: 5, text: "📺 Geruis van de tv" },
+        { start: 6, end: 10, text: "Het geruis wordt" },
+        { start: 14.5, end: 18, text: "📺 De tv gaat vanzelf aan" },
+        { start: 23, end: 25, text: "Telefoon gaat af" },
+        { start: 28, end: 30, text: "Pick up the phone Noah" },
+        { start: 30, end: 32, text: "Come on... pick up" },
+        { start: 35, end: 75, text: "☎️ Telefoon blijft afgaan" },
+
+
         // Voeg hier meer beschrijvingen toe
     ];
 
@@ -22,60 +29,122 @@ document.addEventListener('DOMContentLoaded', function () {
             descriptionBox.innerText = "";
         }
     });
+
+    document.body.style.backgroundColor = "lightblack";
+
+
+
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const videoPlayer = document.getElementById('myVideo');
-    const speedometer = document.getElementById('speedometer');
-    let timer = null;
 
-    videoPlayer.addEventListener('click', function () {
-        // Zorg ervoor dat de snelheidsmeter reset en alleen start als deze nog niet loopt
-        if (timer === null) {
-            let speed = 0;
-            speedometer.innerText = speed;
 
-            // Versnellen tot 50 binnen 10 seconden
-            timer = setInterval(function () {
-                if (speed < 50) {
-                    speed++;
-                    speedometer.innerText = speed;
-                } else {
-                    clearInterval(timer); // Stop de initiële interval
-                    timer = setInterval(function () {
-                        // Variëren tussen 50 en 70
-                        speed = Math.floor(Math.random() * (70 - 50 + 1)) + 50;
-                        speedometer.innerText = speed;
-                    }, 1000); // Update elke seconde binnen de variatieperiode
-                }
-            }, 1000 * 10 / 50); // Duurt 10 seconden om 50 te bereiken, dus update elke 200ms
+// document.getElementById('myVideo').style.animation = "rotate 1s 15s linear";
 
-            // Stop de variatie na 60 seconden vanaf het starten
-            setTimeout(() => {
-                clearInterval(timer);
-                timer = null; // Reset timer zodat de snelheidsmeter opnieuw kan worden gestart
-            }, 60000 + 10000); // 60 seconden plus de initiële 10 seconden
-        }
-    });
+// document.addEventListener('DOMContentLoaded', function () {
+//     const tiks = document.querySelectorAll('.tik');
+
+//     function showRandomTik() {
+//         const idx = Math.floor(Math.random() * tiks.length); // Kies een willekeurig 'tik' element
+//         const tik = tiks[idx];
+
+//         // Maak het gekozen 'tik' element zichtbaar
+//         tik.style.opacity = 1;
+
+//         // Maak het element na korte tijd weer onzichtbaar
+//         setTimeout(() => {
+//             tik.style.opacity = 0;
+//         }, 500); // Houd de tekst zichtbaar voor 500ms
+//     }
+
+//     // Toon een willekeurige 'tik' elke seconde
+//     setInterval(showRandomTik, 1000);
+// });
+
+document.getElementById('myVideo').addEventListener('click', function () {
+    setTimeout(function () {
+        document.body.style.backgroundColor = "white";
+        document.getElementById('myVideo').style.animation = "rotate 0.5s linear";
+
+    }, 15000); // 15
+
+    setTimeout(function () {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        document.getElementById('myVideo').style.animation = "none";
+    }, 15250);
+
+    setTimeout(function () {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        // document.getElementById('"descriptionBox"').style.color = "black";
+    }, 15500);
+
+    setTimeout(function () {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        document.getElementById('myVideo').style.animation = "none";
+    }, 16000);
+
+    setTimeout(function () {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        // document.getElementById('descriptionBox').style.color = "black";
+    }, 25000); // 25
+
+    // After 9 seconds (4s for white + 5s for black), change it back to white
+    setTimeout(function () {
+        document.body.style.backgroundColor = "grey";
+        document.getElementById('myVideo').style.animation = "none";
+    }, 34000);
+
+    setTimeout(function () {
+        document.body.style.backgroundColor = "white";
+        // document.getElementById('descriptionBox').style.color = "black";
+        document.body.style.color = "black";
+    }, 75000);
+
+    setTimeout(function () {
+        document.body.style.transition = "background-color 2s";
+        document.body.style.backgroundColor = "grey";
+        // document.getElementById('myVideo').style.animation = "draai 1s linear";
+
+    }, 86000);
+
+    setTimeout(function () {
+        document.getElementById('myVideo').style.animation = "rotate 1s linear";
+    }, 90000);
+
+    setTimeout(function () {
+
+        document.body.style.transition = "background-color 2s";
+        document.body.style.backgroundColor = "black";
+        document.getElementById('myVideo').style.animation = "none";
+        // document.getElementById('myVideo').style.animation = "rotate 1s";
+        // document.getElementById('myVideo').style.animation = "rotate 0.5s linear";
+    }, 92000);
+
+    setTimeout(function () {
+        document.body.style.scale = "1.2";
+    }, 95000);
+
+
+
+    // 115 seconden
+
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const tiks = document.querySelectorAll('.tik');
 
-    function showRandomTik() {
-        const idx = Math.floor(Math.random() * tiks.length); // Kies een willekeurig 'tik' element
-        const tik = tiks[idx];
+// if the descriptionBox has a backgroundcolor white, the color becomes black
+// if the descriptionBox has a backgroundcolor black or grey, the color becomes white
 
-        // Maak het gekozen 'tik' element zichtbaar
-        tik.style.opacity = 1;
+// document.addEventListener('DOMContentLoaded', function () {
+//     const descriptionBox = document.getElementById('descriptionBox');
+//     const descriptionBoxColor = window.getComputedStyle(descriptionBox).backgroundColor;
 
-        // Maak het element na korte tijd weer onzichtbaar
-        setTimeout(() => {
-            tik.style.opacity = 0;
-        }, 500); // Houd de tekst zichtbaar voor 500ms
-    }
-
-    // Toon een willekeurige 'tik' elke seconde
-    setInterval(showRandomTik, 1000);
-});
+//     if (descriptionBoxColor === 'rgb(255, 255, 255)') {
+//         descriptionBox.style.color = 'black';
+//     } else if (descriptionBoxColor === 'rgb(0, 0, 0)' || descriptionBoxColor === 'rgb(128, 128, 128)') {
+//         descriptionBox.style.color = 'white';
+//     }
+// });
 
