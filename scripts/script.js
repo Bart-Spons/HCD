@@ -7,13 +7,16 @@ document.getElementById('myVideo').addEventListener('click', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const descriptionBox = document.getElementById('descriptionBox');
     const descriptions = [
-        { start: 0, end: 5, text: "📺 Geruis van de tv" },
-        { start: 6, end: 10, text: "Het geruis wordt" },
-        { start: 14.5, end: 18, text: "📺 De tv gaat vanzelf aan" },
-        { start: 23, end: 25, text: "Telefoon gaat af" },
+        { start: 0, end: 5, text: "📺 The tv makes a murmur noice" },
+        { start: 6, end: 10, text: "The noice of the tv gets louder " },
+        { start: 14.5, end: 18, text: "📺 The TV turns on by itself" },
+        { start: 23, end: 25, text: "The phone starts to ring" },
         { start: 28, end: 30, text: "Pick up the phone Noah" },
         { start: 30, end: 32, text: "Come on... pick up" },
-        { start: 35, end: 75, text: "☎️ Telefoon blijft afgaan" },
+        { start: 35, end: 74, text: "☎️ The phone keeps ringing" },
+        { start: 70, end: 83, text: "*Car drive very fast*" },
+        { start: 73, end: 77, text: "Come on Noah... Pick up the god damn phone!" },
+        { start: 130, end: 132, text: "Aaaaah" }
 
 
         // Voeg hier meer beschrijvingen toe
@@ -59,6 +62,59 @@ document.addEventListener('DOMContentLoaded', function () {
 //     // Toon een willekeurige 'tik' elke seconde
 //     setInterval(showRandomTik, 1000);
 // });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tiks = document.querySelectorAll('.tik');
+
+    function showRandomTik() {
+        const idx = Math.floor(Math.random() * tiks.length); // Kies een willekeurig 'tik' element
+        const tik = tiks[idx];
+
+        // Maak het gekozen 'tik' element zichtbaar
+        tik.style.opacity = 1;
+
+        // Maak het element na korte tijd weer onzichtbaar
+        setTimeout(() => {
+            tik.style.opacity = 0;
+        }, 500); // Houd de tekst zichtbaar voor 500ms
+    }
+
+    let intervalId; // Houd de ID bij van de interval timer
+
+    const videoPlayer = document.getElementById('myVideo');
+    videoPlayer.addEventListener('timeupdate', function () {
+        const currentTime = videoPlayer.currentTime;
+
+        // Check of we binnen de tijdslimieten zitten
+        if (currentTime >= 35 && currentTime <= 74) {
+            if (!intervalId) { // Start de interval alleen als deze nog niet loopt
+                intervalId = setInterval(showRandomTik, 1000);
+            }
+        } else if (currentTime >= 88 && currentTime <= 135) {
+                if (!intervalId) { // Start de interval alleen als deze nog niet loopt
+                    intervalId = setInterval(showRandomTik, 1000);
+                }
+        }
+        
+        else {
+            if (intervalId) {
+                clearInterval(intervalId); // Stop de interval als we buiten de limieten zijn
+                intervalId = null; // Reset de intervalId
+            }
+        }
+        // if (currentTime >= 88 && currentTime <= 135) {
+        //     if (!intervalId) { // Start de interval alleen als deze nog niet loopt
+        //         intervalId = setInterval(showRandomTik, 1000);
+        //     }
+        // } else {
+        //     if (intervalId) {
+        //         clearInterval(intervalId); // Stop de interval als we buiten de limieten zijn
+        //         intervalId = null; // Reset de intervalId
+        //     }
+        // }
+    });
+});
+
 
 document.getElementById('myVideo').addEventListener('click', function () {
     setTimeout(function () {
