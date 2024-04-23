@@ -10,6 +10,16 @@ html {
   justify-content: center;
 }
 
+@font-face {
+  font-family: "scream";
+  src: url(../font/ScreamReal.ttf);
+}
+
+@font-face {
+  font-family: "body";
+  src: url(../font/EGOSHICTrial.ttf);
+}
+
 #descriptionBox {
   width: 100%;
   text-align: center;
@@ -18,6 +28,78 @@ html {
   /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 10px;
   margin-top: 20px; /* Voeg ruimte toe boven de beschrijvingsbox */
+  /* font-family: scream; */
+  font-family: body;
+}
+
+#timed-text {
+  position: absolute;
+  top: 25rem;
+  left: 45rem;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially fully transparent */
+  transition: opacity 1s; /* Smooth transition for the opacity */
+  font-family: scream;
+}
+
+#timed-text2 {
+  position: absolute;
+  top: 25rem;
+  left: 35rem;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially fully transparent */
+  transition: opacity 1s; /* Smooth transition for the opacity */
+  font-family: scream;
+}
+
+#timed-text3 {
+  position: absolute;
+  top: 20rem;
+  left: 35rem;
+  color: white;
+  font-size: 2em;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially fully transparent */
+  transition: opacity 1s; /* Smooth transition for the opacity */
+  font-family: scream;
+}
+
+#timed-text4 {
+  position: absolute;
+  top: 20rem;
+  left: 45rem;
+  color: white;
+  font-size: 3em;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially fully transparent */
+  transition: opacity 1s; /* Smooth transition for the opacity */
+  font-family: scream;
+}
+
+/* water */
+#timed-text5 {
+  position: absolute;
+  top: 20rem;
+  left: 45rem;
+  color: white;
+  font-size: 3em;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially fully transparent */
+  transition: opacity 1s; /* Smooth transition for the opacity */
+  font-family: scream;
+}
+
+/* step */
+#timed-text6 {
+  position: absolute;
+  top: 40rem;
+  left: 45rem;
+  color: white;
+  font-size: 2em;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially fully transparent */
+  transition: opacity 1s; /* Smooth transition for the opacity */
+  font-family: scream;
 }
 
 /* Voorbeeld animatie */
@@ -85,19 +167,22 @@ html {
 }
 
 #tikContainer {
-  position: relative;
+  position: absolute;
+  /* margin-top: -20em; */
   width: 200px;
   height: 200px;
   margin: 100px auto;
+  top: 8em;
+  left: 7em;
 }
 
 .tik {
   position: absolute;
-  width: 60px;
+  width: auto;
   text-align: center;
   font-family: Arial, sans-serif;
-  font-size: 4em;
-  color: #000;
+  font-size: 1em;
+  color: white;
   opacity: 0; /* Start met onzichtbaar */
   transition: opacity 0.5s ease-in-out; /* Overgang voor zichtbaar/onzichtbaar */
 }
