@@ -101,6 +101,10 @@ Text Size: Occasionally, the text was a bit small, making it hard for her to rea
 Subtle Sounds: For background noises like a murmuring TV, Marie recommended making the subtitles for these sounds more noticeable, perhaps by using a different text style or a symbol like murmur noise to draw attention to these auditory details.
 Visual Indicators for Sounds: The icon for the ringing phone (☎️) could be larger and more prominent. This would help underscore the significance of the sound in the scene, ensuring that viewers do not miss this key detail.
 
+### Result
+
+<img src='./video/info.png'> 
+
 # Afterword
 
 Working on this project has been very rewarding and has taught me a lot. I've learned more about the special challenges that people like Marie, who are deaf, face when they watch movies and attend classes.
