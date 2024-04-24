@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     textElement.style.display = 'none';
                 }, 1000);
             }, 3000); // Display for 3 seconds
-        }, 132000); // Delay before showing text again
+        }, 133000); // Delay before showing text again
 
         // timed-text5 appears at 50 seconds for 3 seconds
         setTimeout(function () {
@@ -161,17 +161,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function () {
     const descriptionBox = document.getElementById('descriptionBox');
     const descriptions = [
-        { start: 0, end: 2, text: "📺 The tv makes a murmur noice" },
+        { start: 0, end: 2, text: "*murmur noice*" },
         { start: 6, end: 8, text: "The noice of the tv gets louder " },
         // { start: 14.5, end: 18, text: "📺 The TV turns on by itself" },
         // { start: 23, end: 25, text: "The phone starts to ring" },
         { start: 27, end: 28, text: "Pick up the phone Noah" },
-        { start: 30, end: 32, text: "Come on... pick up" },
+        { start: 30, end: 31, text: "Come on" },
+        { start: 31, end: 32, text: "Pick up!" },
         // { start: 35, end: 74, text: "☎️ The phone keeps ringing" },
-        { start: 75, end: 77, text: "*Beeping tires*" },
-        { start: 80, end: 82, text: "Come on Noah... Pick up the god damn phone!" },
-        { start: 82, end: 83, text: "*Beeping tires*" },
-        { start: 131, end: 132, text: "Aaaaah" }
+        { start: 75, end: 77, text: "*Screaching tires*" },
+        { start: 80, end: 81, text: "Come on Noah!" },
+        { start: 81, end: 82, text: "Pick up the god damn phone!!" },
+        { start: 82, end: 83, text: "*Screaching tires*" },
+        { start: 132, end: 133, text: "Aaaaah" }
 
 
 
@@ -243,11 +245,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check of we binnen de tijdslimieten zitten
         if (currentTime >= 35 && currentTime <= 74) {
             if (!intervalId) { // Start de interval alleen als deze nog niet loopt
-                intervalId = setInterval(showRandomTik, 1000);
+                intervalId = setInterval(showRandomTik, 500);
             }
         } else if (currentTime >= 88 && currentTime <= 135) {
             if (!intervalId) { // Start de interval alleen als deze nog niet loopt
-                intervalId = setInterval(showRandomTik, 1000);
+                intervalId = setInterval(showRandomTik, 500);
             }
         }
 
