@@ -1,44 +1,57 @@
 # HCD
+
 ## 📝 Project Description
+
 Depicting a movie scene for Marie. Marie is a lecturer in Communication & Multimedia Design at the Amsterdam University of Applied Sciences. Marie has a disability, as she is deaf. Marie was born deaf, and no one knows why. Marie is very adept at lip-reading and communicates with her class with the help of a sign language interpreter.
 
 ## 🤔 What have I incorporated?
-### Study Situation
+
+### <span style="color:#0078bf"> Study Situation </span>
+
 Marie is a lecturer in Communication & Multimedia Design at the Amsterdam University of Applied Sciences. She is deaf but has a great love for films and series. Marie shows how you can understand and appreciate films and series even if you can't hear them.
 
 Marie cannot hear sounds in films, such as where voices are coming from. This is challenging because sound tells a lot about what is happening in a film. Therefore, Marie pays extra attention to everything she sees, such as how people look or where they stand. This helps her understand what is happening.
 
 A major issue for Marie is that the subtitles are often inadequate. Sometimes they only describe "tense music," which does not convey what the music contributes to the story. Marie believes it is crucial to improve subtitle quality. She also teaches her students about the importance of making films and series understandable for everyone, including those who cannot hear. She challenges her students to think about how everyone can enjoy a film, with or without sound.
 
-### Ignore Conventions
+### <span style="color:#0078bf"> Ignore Conventions </span>
+
 Marie is deaf but that does not stop her. Marie often finds that the subtitles in films are not good enough. It frustrates her when it's hard to tell who is saying what or how the music makes the film exciting.
 
 Because she is deaf, Marie uses an interpreter in class. This allows her to communicate effectively with her students. Marie teaches her students that they don't always have to follow the usual rules. She shows that sometimes you need to find new ways to solve problems.
 
 Marie wants films and lessons to be clear for everyone, including those who cannot hear. She challenges her students to think about how they can do things differently. This way, they become more creative and can help everyone, not just those who can hear. This is how Marie breaks conventional rules and brings new ideas into her lessons.
 
-### Prioritize Identity
+### <span style="color:#0078bf"> Prioritize Identity </span>
+
 Focus on the person, incorporating what she wants
 
 Marie is not afraid to say that the subtitles in many films are not good enough. She wants this to improve, not just for herself, but for everyone who is deaf or hard of hearing. Her fight for better subtitles shows how important her identity is in her struggle for equality.
 
 By prioritizing her identity, Marie teaches her students an important tip: "Watch a movie without sound and consider what could be visually added to improve the user experience of the film for everyone."
 
-### Add Nonsense
+### <span style="color:#0078bf"> Add Nonsense </span>
+
 ### Moving (rotating) screen
 
+During the
 
 ### Opacity
+
 From the moment the zombie appears on screen, the screen's opacity changes between 1.0 and 0.5 every half second.
 
 ## 🧑🏼‍💻 Testing
+
 I have tested my work with Marie once a week. Here is everything you need to know.
 
-### Test 1
-Feedback from Marie
+## <span style="color:#00AF43"> Test 1 </span>
+
+### Feedback from Marie
+
 I showed Marie my selected video and explained my idea. I chose a scene from the movie 'The Ring', a well-known horror film. The film doesn't have much dialogue, but the sound creates a lot of tension which enhances the viewer's experience.
 
 ### Feedback from Instructor (Vasilis)
+
 - Make it scarier
 - Depict TV static visually
 - Visual representation of the ringing of a mobile phone
@@ -47,28 +60,35 @@ I showed Marie my selected video and explained my idea. I chose a scene from the
 
 <b>"Visual pain hurts!!" ~ Vasilis </b>
 
-## Test 2
+## <span style="color:#00AF43"> Test 2 </span>
+
 ### Who says the text?
+
 In the scene, it’s crucial to clearly identify which character is speaking, especially since the sound cannot be heard. To address this, I have ensured that subtitles are not only accurate but are also positioned near the speaker’s image on the screen. This visual cue helps viewers, including those who are deaf like Marie, to easily follow the dialogue and connect it with the corresponding character.
 
 ### Go into detail, a bell rings -> what kind of bell
+
 When a bell rings in the scene, the subtitle must specify the type of bell to help convey the atmosphere. For instance, the subtitle might read "sharp doorbell rings" if it's meant to signal a visitor at the door, or "soft service bell tinkles" for a quieter, more ambient sound like in a shop. These detailed descriptions help to paint a more vivid picture and enhance the viewing experience for those who cannot hear the sound.
 
 ### Subtitles close to the person
+
 Positioning subtitles close to the speaking person is essential for clear communication. This method helps viewers quickly and accurately identify who is talking without the auditory cues that hearing viewers would typically rely on. For each scene, I carefully place subtitles near the character who is speaking. This placement is especially adjusted when the scene involves multiple speakers or when the camera angle shifts, ensuring that the subtitles remain with the correct person throughout the conversation.
 
 ### Feedback with Tamara
+
 - Add a font
 - Do even more with color
 - Starting with black and white is fine but it can be improved.
 
 ### What does Marie find scary?
+
 - Enough closed captions
 - Kinetic typography
 - "Squealing tires"
 - Can also be on the car (like with Joppe)
 
-## Test 3
+## <span style="color:#00AF43"> Test 3 </span>
+
 Marie was very pleased with the work I presented to her. She appreciated how all the visual elements combined effectively to represent what would typically be conveyed through sound. This holistic approach allowed her to fully engage with the content, enhancing her understanding and enjoyment of the media.
 
 She found that the detailed descriptions and creative visual cues (like the different types of bells and speaker-specific subtitles) helped her "hear" the sounds through the visuals. This inclusivity made the experience richer and more accessible.
@@ -76,6 +96,7 @@ She found that the detailed descriptions and creative visual cues (like the diff
 Despite her positive feedback, Marie did offer some constructive suggestions to further refine the project:
 
 ### Small Feedback Points
+
 Text Size: Occasionally, the text was a bit small, making it hard for her to read quickly. Marie suggested increasing the font size in certain scenes to ensure clarity, especially during fast-paced dialogues.
 Subtle Sounds: For background noises like a murmuring TV, Marie recommended making the subtitles for these sounds more noticeable, perhaps by using a different text style or a symbol like murmur noise to draw attention to these auditory details.
 Visual Indicators for Sounds: The icon for the ringing phone (☎️) could be larger and more prominent. This would help underscore the significance of the sound in the scene, ensuring that viewers do not miss this key detail.
